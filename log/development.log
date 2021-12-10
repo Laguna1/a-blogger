@@ -1,0 +1,391 @@
+  [1m[35m (208.3ms)[0m  [1m[35mCREATE DATABASE "a_blogger_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "a_blogger_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-12-10 02:19:12 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.7ms | Allocations: 4926)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4996)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms | Allocations: 8503)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000007fd0>):
+    1: <h1>Pages#home</h1>
+    2: <p><%= link_to 'About', about_path %></p>
+  
+app/views/pages/home.html.erb:2
+Started GET "/" for ::1 at 2021-12-10 02:20:07 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 173)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/oksana/a-blogger/config/webpack/environment.js
+- /home/oksana/a-blogger/config/webpack/development.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js
+- /home/oksana/a-blogger/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/environment.js:1:87)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/development.js:3:21)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/oksana/a-blogger/node_modules/yargs/yargs.js:576:18)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/oksana/a-blogger/config/webpack/environment.js',
+    '/home/oksana/a-blogger/config/webpack/development.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js',
+    '/home/oksana/a-blogger/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 9140.4ms | Allocations: 16689)
+Completed 500 Internal Server Error in 9143ms (ActiveRecord: 0.0ms | Allocations: 17788)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/oksana/a-blogger/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-12-10 02:41:23 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 47.1ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/oksana/a-blogger/config/webpack/environment.js
+- /home/oksana/a-blogger/config/webpack/development.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js
+- /home/oksana/a-blogger/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/environment.js:1:87)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/development.js:3:21)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/oksana/a-blogger/node_modules/yargs/yargs.js:576:18)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/oksana/a-blogger/config/webpack/environment.js',
+    '/home/oksana/a-blogger/config/webpack/development.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js',
+    '/home/oksana/a-blogger/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 2561.6ms | Allocations: 7315)
+Completed 500 Internal Server Error in 2699ms (ActiveRecord: 0.0ms | Allocations: 9797)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/oksana/a-blogger/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-12-10 02:41:38 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 88)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/oksana/a-blogger/config/webpack/environment.js
+- /home/oksana/a-blogger/config/webpack/development.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js
+- /home/oksana/a-blogger/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/environment.js:1:87)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/development.js:3:21)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/oksana/a-blogger/node_modules/yargs/yargs.js:576:18)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/oksana/a-blogger/config/webpack/environment.js',
+    '/home/oksana/a-blogger/config/webpack/development.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js',
+    '/home/oksana/a-blogger/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 1318.5ms | Allocations: 4882)
+Completed 500 Internal Server Error in 1320ms (ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/oksana/a-blogger/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-12-10 02:45:19 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/oksana/a-blogger/config/webpack/environment.js
+- /home/oksana/a-blogger/config/webpack/development.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js
+- /home/oksana/a-blogger/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/environment.js:1:87)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/oksana/a-blogger/config/webpack/development.js:3:21)
+    at Module._compile (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (/home/oksana/a-blogger/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/oksana/a-blogger/node_modules/yargs/yargs.js:576:18)
+    at /home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/oksana/a-blogger/config/webpack/environment.js',
+    '/home/oksana/a-blogger/config/webpack/development.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/oksana/a-blogger/node_modules/webpack-cli/bin/cli.js',
+    '/home/oksana/a-blogger/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 1331.7ms | Allocations: 7338)
+Completed 500 Internal Server Error in 1349ms (ActiveRecord: 0.0ms | Allocations: 9820)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/oksana/a-blogger/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-12-10 02:51:38 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/oksana/a-blogger/public/packs
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 2464ms
+Built at: 12/10/2021 2:51:42 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9949.5ms | Allocations: 6447)
+Completed 200 OK in 9959ms (Views: 9951.7ms | ActiveRecord: 0.0ms | Allocations: 8961)
+
+
+Started GET "/pages/about" for ::1 at 2021-12-10 02:51:56 +0200
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 474.0ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 478.4ms | Allocations: 3083)
+Completed 200 OK in 481ms (Views: 479.3ms | ActiveRecord: 0.0ms | Allocations: 3596)
+
+
+Started GET "/" for ::1 at 2021-12-10 02:51:59 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2989)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3372)
+
+
