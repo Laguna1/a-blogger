@@ -3,7 +3,8 @@
     <div>
       <h3><%=link_to article.title, article_path(article) %></h3>
       <p><%= article.description %></p>
-      <p><%= link_to 'Edit', edit_article_path(article) %></p>
+      <p><%= link_to 'Edit', edit_article_path(article) %> ||
+         <%= link_to 'Delete', article_path(article), method: :delete, date: { confirm: 'Are you sure?' } %></p>
     </div>
   <% end %>
 </div>
