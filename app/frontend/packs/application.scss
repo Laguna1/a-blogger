@@ -3,29 +3,29 @@ h1 {
 }
 
 
-.navbar{ 
-	background-color: #08088A
-};
+// .navbar{ 
+// 	background-color: #08088A
+// };
 
-#logo {
-	float: left;
-	font-size: 1.7em;
-	color: #fff;
-	letter-spacing: -1px;
-	font-weight: bold;
-}
+// #logo {
+// 	float: left;
+// 	font-size: 1.7em;
+// 	color: #fff;
+// 	letter-spacing: -1px;
+// 	font-weight: bold;
+// }
 
-#logo:hover {
-	color: rgb(158, 232, 255);
-	transform: scale(1.1);
-}
+// #logo:hover {
+// 	color: rgb(158, 232, 255);
+// 	transform: scale(1.1);
+// }
 
-.jumbotron{
-	background-image: asset-url('back.jpg');
-	background-size: cover;
-	height: 550px;
+// .jumbotron{
+// 	background-image: asset-url('back.jpg');
+// 	background-size: cover;
+// 	height: 550px;
 
-}
+// }
   
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap"; 

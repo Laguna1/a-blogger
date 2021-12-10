@@ -2084,3 +2084,881 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3904)
 
 
+Started GET "/pages/about" for ::1 at 2021-12-10 05:54:13 +0200
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.1ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav_bar.html.erb (Duration: 1.5ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.8ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4708)
+Completed 200 OK in 21ms (Views: 19.4ms | Allocations: 5796)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 05:54:16 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 128.3ms | Allocations: 5159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav_bar.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 135.9ms | Allocations: 8593)
+Completed 200 OK in 142ms (Views: 139.3ms | ActiveRecord: 62.2ms | Allocations: 9482)
+
+
+Started GET "/" for ::1 at 2021-12-10 05:54:33 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav_bar.html.erb (Duration: 0.4ms | Allocations: 149)
+  Rendered layouts/_msg.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3634)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4134)
+
+
+Started GET "/" for ::1 at 2021-12-10 05:56:33 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 374)
+  Rendered layouts/_msg.html.erb (Duration: 0.6ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4680)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 5763)
+
+
+Started GET "/" for ::1 at 2021-12-10 05:56:35 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3518)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 3894)
+
+
+Started GET "/" for ::1 at 2021-12-10 05:58:46 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.6ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4692)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 5772)
+
+
+Started GET "/articles/new" for ::1 at 2021-12-10 05:59:10 +0200
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 72.0ms | Allocations: 1007)
+  Rendered articles/new.html.erb within layouts/application (Duration: 127.4ms | Allocations: 1959)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layouts/_msg.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 134.7ms | Allocations: 5394)
+Completed 200 OK in 140ms (Views: 137.1ms | ActiveRecord: 0.0ms | Allocations: 6304)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 05:59:16 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 1222)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 150)
+  Rendered layouts/_msg.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 4662)
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 2.0ms | Allocations: 5183)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 06:02:44 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 374)
+  Rendered layouts/_msg.html.erb (Duration: 0.9ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 5716)
+Completed 200 OK in 63ms (Views: 57.7ms | ActiveRecord: 2.5ms | Allocations: 6823)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 06:02:46 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 4484)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 1.7ms | Allocations: 4876)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 06:03:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (5.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1044)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a4891e1b1df22189cac3
+Version: webpack 4.46.0
+Time: 9255ms
+Built at: 12/10/2021 6:04:04 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c7771d95d13df1b2fc8a.js   1020 KiB  application  [emitted] [immutable]  application
+js/application-c7771d95d13df1b2fc8a.js.map   1.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c7771d95d13df1b2fc8a.js js/application-c7771d95d13df1b2fc8a.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 402 bytes {application} [built]
+[./app/frontend/packs/application.js] 530 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 695 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 45 hidden modules
+
+ERROR in ./app/frontend/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss)
+Module not found: Error: Can't resolve './back.jpg' in '/home/oksana/a-blogger/app/frontend/packs'
+ @ ./app/frontend/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss) 4:36-57
+ @ ./app/frontend/packs/application.scss
+ @ multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss
+
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4) or calc($spacer / 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 1:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 1:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 1:9             root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 1:9             root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 1:9             root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 19827.8ms | Allocations: 5694)
+Completed 200 OK in 19833ms (Views: 19824.9ms | ActiveRecord: 5.6ms | Allocations: 6086)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 06:04:20 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1052)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: d53ba55a29495b4969a9
+Version: webpack 4.46.0
+Time: 8174ms
+Built at: 12/10/2021 6:04:30 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b7d888bf377fc10492e1.js   1020 KiB  application  [emitted] [immutable]  application
+js/application-b7d888bf377fc10492e1.js.map   1.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b7d888bf377fc10492e1.js js/application-b7d888bf377fc10492e1.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 402 bytes {application} [built]
+[./app/frontend/packs/application.js] 530 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 695 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 45 hidden modules
+
+ERROR in ./app/frontend/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss)
+Module not found: Error: Can't resolve './back.jpg' in '/home/oksana/a-blogger/app/frontend/packs'
+ @ ./app/frontend/packs/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss) 4:36-57
+ @ ./app/frontend/packs/application.scss
+ @ multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss
+
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4) or calc($spacer / 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 1:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 1:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 1:9             root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 1:9             root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 1:9             root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_msg.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 10191.5ms | Allocations: 5745)
+Completed 200 OK in 10194ms (Views: 10190.7ms | ActiveRecord: 2.1ms | Allocations: 6137)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 06:05:08 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (4.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 1044)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/oksana/a-blogger/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4) or calc($spacer / 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 31:9           root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 31:9           root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 31:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 31:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 31:9            root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 5b213382af9021d18ede
+Version: webpack 4.46.0
+Time: 8012ms
+Built at: 12/10/2021 6:05:18 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-69792c122477a9f3720f.js   1020 KiB  application  [emitted] [immutable]  application
+js/application-69792c122477a9f3720f.js.map   1.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-69792c122477a9f3720f.js js/application-69792c122477a9f3720f.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 402 bytes {application} [built]
+[./app/frontend/packs/application.js] 530 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 695 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 147)
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 9971.5ms | Allocations: 5766)
+Completed 200 OK in 9974ms (Views: 9967.7ms | ActiveRecord: 4.8ms | Allocations: 6158)
+
+
+Started GET "/articles/new" for ::1 at 2021-12-10 06:05:53 +0200
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.0ms | Allocations: 927)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layouts/_msg.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 5328)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 5849)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:05:54 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 149)
+  Rendered layouts/_msg.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 4246)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms | Allocations: 5118)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:07:48 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 77.3ms | Allocations: 374)
+  Rendered layouts/_msg.html.erb (Duration: 71.7ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 77.0ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 267.2ms | Allocations: 4687)
+Completed 200 OK in 315ms (Views: 313.4ms | ActiveRecord: 0.0ms | Allocations: 5767)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:09:38 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1203)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2260)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pages#home</h1>
+<p><%= link_to 'About', pages_about_path %></p>
+<p><%= link_to 'Articles', articles_path %></p>
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Blog example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          <%= link_to 'About Page' pages_about_path, class: "btn btn-secondary my-2" %>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+):
+1:    <h1>Pages#home</h1>
+2:    <p><%= link_to 'About', pages_about_path %></p>
+3:    <p><%= link_to 'Articles', articles_path %></p>
+4:    <main>
+5:    
+6:      <section class="py-5 text-center container">
+7:        <div class="row py-lg-5">
+8:          <div class="col-lg-6 col-md-8 mx-auto">
+9:            <h1 class="fw-light">Blog example</h1>
+10:            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+11:            <p>
+12:              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+13:              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+14:              <%= link_to 'About Page' pages_about_path, class: "btn btn-secondary my-2" %>
+15:            </p>
+16:          </div>
+17:        </div>
+18:      </section>
+19:    </main>
+  
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/" for ::1 at 2021-12-10 06:10:09 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1203)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2261)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pages#home</h1>
+<p><%= link_to 'About', pages_about_path %></p>
+<p><%= link_to 'Articles', articles_path %></p>
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Blog example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          
+          <%= link_to 'About Page' pages_about_path, class: "btn btn-secondary my-2" %>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+):
+1:    <h1>Pages#home</h1>
+2:    <p><%= link_to 'About', pages_about_path %></p>
+3:    <p><%= link_to 'Articles', articles_path %></p>
+4:    <main>
+5:    
+6:      <section class="py-5 text-center container">
+7:        <div class="row py-lg-5">
+8:          <div class="col-lg-6 col-md-8 mx-auto">
+9:            <h1 class="fw-light">Blog example</h1>
+10:            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+11:            <p>
+12:              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+13:              
+14:              <%= link_to 'About Page' pages_about_path, class: "btn btn-secondary my-2" %>
+15:            </p>
+16:          </div>
+17:        </div>
+18:      </section>
+19:    </main>
+  
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/" for ::1 at 2021-12-10 06:10:28 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 4.0ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 2.3ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 4695)
+Completed 200 OK in 38ms (Views: 36.2ms | Allocations: 5781)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:11:02 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.8ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 4692)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 5773)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:11:05 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 149)
+  Rendered layouts/_msg.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3523)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 3900)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:11:19 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.9ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 4706)
+Completed 200 OK in 33ms (Views: 30.8ms | Allocations: 5789)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:12:23 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.7ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4692)
+Completed 200 OK in 24ms (Views: 22.6ms | Allocations: 5777)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:13:26 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 1.2ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4735)
+Completed 200 OK in 25ms (Views: 23.8ms | Allocations: 5817)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:14:19 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 1.9ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 4743)
+Completed 200 OK in 30ms (Views: 28.2ms | Allocations: 5829)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:15:26 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 1.5ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 4698)
+Completed 200 OK in 29ms (Views: 27.0ms | Allocations: 5779)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:15:28 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 149)
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3528)
+Completed 200 OK in 16ms (Views: 14.6ms | Allocations: 3905)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:16:38 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 1.0ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4712)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 5799)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:16:49 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.9ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4697)
+Completed 200 OK in 29ms (Views: 27.0ms | Allocations: 5782)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:17:04 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.6ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 4699)
+Completed 200 OK in 27ms (Views: 23.5ms | Allocations: 5780)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:17:06 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 149)
+  Rendered layouts/_msg.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3528)
+Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 3906)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:18:27 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.8ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 4701)
+Completed 200 OK in 23ms (Views: 21.4ms | Allocations: 5787)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:18:46 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 373)
+  Rendered layouts/_msg.html.erb (Duration: 0.8ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4697)
+Completed 200 OK in 30ms (Views: 26.0ms | Allocations: 5778)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:27:25 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 364)
+  Rendered layouts/_msg.html.erb (Duration: 0.5ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4696)
+Completed 200 OK in 24ms (Views: 20.9ms | Allocations: 5783)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:27:51 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 2.5ms | Allocations: 363)
+  Rendered layouts/_msg.html.erb (Duration: 0.7ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4688)
+Completed 200 OK in 28ms (Views: 26.1ms | Allocations: 5769)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:28:10 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 2.9ms | Allocations: 378)
+  Rendered layouts/_msg.html.erb (Duration: 2.0ms | Allocations: 154)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 4711)
+Completed 200 OK in 35ms (Views: 31.8ms | Allocations: 5798)
+
+
+Started GET "/" for ::1 at 2021-12-10 06:28:18 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 381)
+  Rendered layouts/_msg.html.erb (Duration: 1.3ms | Allocations: 157)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 4710)
+Completed 200 OK in 37ms (Views: 34.6ms | Allocations: 5800)
+
+
