@@ -1523,3 +1523,132 @@ Processing by ArticlesController#create as HTML
 Completed 200 OK in 50ms (Views: 38.9ms | ActiveRecord: 0.0ms | Allocations: 8688)
 
 
+Started GET "/articles" for ::1 at 2021-12-10 04:52:16 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 107.3ms | Allocations: 4573)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_msg.html.erb (Duration: 0.8ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 206.9ms | Allocations: 8157)
+Completed 200 OK in 211ms (Views: 210.0ms | ActiveRecord: 75.7ms | Allocations: 9259)
+
+
+Started GET "/" for ::1 at 2021-12-10 04:52:22 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_msg.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3250)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 4122)
+
+
+Started GET "/" for ::1 at 2021-12-10 05:13:18 +0200
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 41.9ms | Allocations: 342)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/oksana/a-blogger/public/packs
+[Webpacker] DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 4) or calc($spacer / 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+252 │   1: $spacer / 4,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 252:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 6:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+253 │   2: $spacer / 2,
+    │      ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 253:6  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+    app/frontend/packs/application.scss 6:9            root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+350 │ $container-padding-x: $grid-gutter-width / 2 !default;
+    │                       ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 350:23  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 6:9             root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+449 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 449:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 6:9             root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+690 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 690:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 11:9     @import
+    app/frontend/packs/application.scss 6:9             root stylesheet
+
+WARNING: 66 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: caebea8ad530f58cba29
+Version: webpack 4.46.0
+Time: 9111ms
+Built at: 12/10/2021 5:13:30 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6060a45b82e67f3d9e33.js   1020 KiB  application  [emitted] [immutable]  application
+js/application-6060a45b82e67f3d9e33.js.map   1.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6060a45b82e67f3d9e33.js js/application-6060a45b82e67f3d9e33.js.map
+[0] multi ./app/frontend/packs/application.js ./app/frontend/packs/application.scss 40 bytes {application} [built]
+[./app/frontend/channels sync recursive _channel\.js$] ./app/frontend/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/frontend/channels/index.js] 211 bytes {application} [built]
+[./app/frontend/js/bootstrap_js_files.js] 402 bytes {application} [built]
+[./app/frontend/packs/application.js] 530 bytes {application} [built]
+[./app/frontend/packs/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/frontend/packs/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/frontend/packs/application.scss 694 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 44 hidden modules
+
+  Rendered layouts/_msg.html.erb (Duration: 50.0ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 11313.2ms | Allocations: 20324)
+Completed 200 OK in 11537ms (Views: 11375.9ms | ActiveRecord: 0.0ms | Allocations: 22908)
+
+
