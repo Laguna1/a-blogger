@@ -16,6 +16,9 @@
         <li><%= msg%></li>
       </ul>
     <%end%>
+    <header>
+      <%= link_to 'New Article?', new_article_path %>
+    </header>
     
     <%= yield %>
   </body>
