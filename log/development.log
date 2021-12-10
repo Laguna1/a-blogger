@@ -1360,3 +1360,78 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 23ms (Views: 13.3ms | ActiveRecord: 1.3ms | Allocations: 4515)
 
 
+Started GET "/articles/new" for ::1 at 2021-12-10 04:16:52 +0200
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.4ms | Allocations: 732)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3837)
+Completed 200 OK in 30ms (Views: 11.0ms | ActiveRecord: 6.4ms | Allocations: 7439)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 04:16:54 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1056)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4068)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 1.1ms | Allocations: 4484)
+
+
+Started GET "/articles/1/edit" for ::1 at 2021-12-10 04:16:56 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:45:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.1ms | Allocations: 697)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 822)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3833)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 1.5ms | Allocations: 5007)
+
+
+Started GET "/articles/1" for ::1 at 2021-12-10 04:16:57 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:45:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3177)
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 1.6ms | Allocations: 4254)
+
+
+Started GET "/articles" for ::1 at 2021-12-10 04:16:59 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (3.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:2
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 4056)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 3.6ms | Allocations: 4450)
+
+
+Started GET "/articles/1" for ::1 at 2021-12-10 04:17:02 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:45:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3175)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 1.0ms | Allocations: 4252)
+
+
