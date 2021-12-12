@@ -1,10 +1,18 @@
 <div>
+  <p><%= will_paginate @articles %></p><br />
   <% @articles.each do |article| %>
     <div>
       <h3><%=link_to article.title, article_path(article) %></h3>
-      <p><%= article.description %></p>
-      <p><%= link_to 'Edit', edit_article_path(article) %> ||
-         <%= link_to 'Delete', article_path(article), method: :delete, date: { confirm: 'Are you sure?' } %></p>
+      <p><%= truncate(article.description, length: 100) %></p>
+      <p>Author: <strong> <%= article.user.fullname %></strong></p>
+      <p class="text-muted"><small>Added: <%= time_ago_in_words(article.created_at) %> ago,
+	                           Last updated: <%= time_ago_in_words(article.updated_at) %> ago</small></p>
+          <% if current_user.id == article.user.id %>
+              <p><%= link_to 'Edit', edit_article_path(article) %> ||
+                <%= link_to 'Delete', article_path(article), method: :delete, date: { confirm: 'Are you sure?' } %></p>
+          <% end %>
     </div>
+    
   <% end %>
+
 </div>
