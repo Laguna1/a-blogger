@@ -5,10 +5,13 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :articles
-  validates :fullname, presence: true, 
-                       uniqueness: {case_sensitive: false}
-  validates :email, presence: true, 
-                    uniqueness: {case_sensitive: false},
-                    format:{with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i}
+
+  before_save {self.email = email.downcase}
+
+  validates :fullname, presence: true,
+                       uniqueness: { case_sensitive: false }
+  validates :email, presence: true,
+                    uniqueness: { case_sensitive: false },
+                    format:{ with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i }
   validates :mobile_no, uniqueness: true, numericality: { only_integer: true }
-end 
+end
