@@ -7,6 +7,12 @@
 <%end%>
 
 <%= form_for @article do |f| %>
+
+  <p class="">
+    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+    <% cb.label(class: "") {cb.check_box(class: "") + cb.text} %>
+    <% end %>
+	</p>
   <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
