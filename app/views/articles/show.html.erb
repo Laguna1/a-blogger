@@ -1,6 +1,15 @@
 <h1>Title - <%= @article.title %></h1>
 <p><%= @article.description %></p>
 <p>Author: <%= @article.user.fullname %></p>
+
+<% if @article.categories.any? %>
+  <p>Categories:
+		<% @article.categories.each do |categories| %>
+	  	<span class=""> <%= categories.name %> </span>	
+		<% end %>
+<% end %>
+</p>
+
 <p><%= link_to 'Edit', edit_article_path %>
   || <%= link_to 'Delete', article_path, method: :delete, date: { confirm: 'Are you sure?' } %>
 </p>

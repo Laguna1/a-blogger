@@ -8,9 +8,9 @@
 
 <%= form_for @article do |f| %>
 
-  <p class="">
+  <p class="mr-3">
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
-    <% cb.label(class: "") {cb.check_box(class: "") + cb.text} %>
+    <% cb.label(class: "mr-3") {cb.check_box(class: "mr-3") + cb.text} %>
     <% end %>
 	</p>
   <p>
