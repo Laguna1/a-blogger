@@ -7,7 +7,7 @@ RSpec.describe ArticlesController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Article. As you add validations to Article, be sure to adjust the attributes here as well.
   login_user
-  
+
   let(:valid_attributes) do
     { title: 'Test title!', description: 'This is a test description', user_id: 1 }
   end

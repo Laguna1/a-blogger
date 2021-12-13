@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :article do
     title { 'Rails rails rails rails' }
-    text do
+    description do
       "When working on another project for my boot camp,
          I decided to build an application centered around
          saving and updating your current reading list."

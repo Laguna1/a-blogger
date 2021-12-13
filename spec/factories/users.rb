@@ -6,6 +6,6 @@ FactoryBot.define do
     email { 'megawriter@test.com' }
     password { '111111' }
     fullname { 'MegaWriter' }
-    mobile_no { 380501111111 }
+    mobile_no { 380_501_111_111 }
   end
 end
