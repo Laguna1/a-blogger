@@ -7,6 +7,13 @@
       <p>Author: <strong> <%= article.user.fullname %></strong></p>
       <p class="text-muted"><small>Added: <%= time_ago_in_words(article.created_at) %> ago,
 	                           Last updated: <%= time_ago_in_words(article.updated_at) %> ago</small></p>
+      <% if article.categories.any? %>
+      <p>Categories:
+	    	<% article.categories.each do |categories| %>
+	      	<span class=""> <%= categories.name %> </span>	
+	    	<% end %>
+	    <% end %>
+         
           <% if current_user.id == article.user.id %>
               <p><%= link_to 'Edit', edit_article_path(article) %> ||
                 <%= link_to 'Delete', article_path(article), method: :delete, date: { confirm: 'Are you sure?' } %></p>
