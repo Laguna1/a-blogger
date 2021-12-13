@@ -3,24 +3,37 @@
 require 'rails_helper'
 
 RSpec.feature 'Signup Page', type: :feature do
-  describe 'User signs up', type: :feature do
-    let!(:fullname) { 'fullname' }
-    let!(:mobile_no) { '380_501_111_112' }
-    let!(:email) { 'user@email.com' }
-    let!(:password) { 'password' }
-
-    it "creates new user" do
-        visit 'new_user_registration_path'
-        within('form', visible: false) do
-          fill_in 'user_fullname', with: fullname
-          fill_in 'user[mobile_no]', with: mobile_no
-          fill_in 'user[email]', with: email
-          fill_in 'user[password]', with: password
-          fill_in 'user[password_confirmation]', with: password
+  
+    feature 'User sign up' do
+        scenario 'User registers' do
+          visit(new_user_registration_path)
+          puts page.body
+          fill_in 'Fullname', with: 'fullname'
+          fill_in('user[mobile_no]', with: '380_501_111_112')
+          fill_in('user[email]', with: 'user@email.com')
+          fill_in('user[password]', with: 'password')
+          fill_in('user[password_confirmation]', with: 'password')
+          click_button('Submit')
+          expect(page).to have_content('Welcome! You have signed up successfully.')
         end
-        click_button 'Submit'
-        expect(page).to have_content('Welcome! You have signed up successfully.')
-    end
+      end
+    # let!(:fullname) { 'fullname' }
+    # let!(:mobile_no) { '380_501_111_112' }
+    # let!(:email) { 'user@email.com' }
+    # let!(:password) { 'password' }
+
+    # it "creates new user" do
+    #     visit 'new_user_registration_path'
+    #     within('form', visible: false) do
+    #       fill_in 'user_fullname', with: fullname
+    #       fill_in 'user[mobile_no]', with: mobile_no
+    #       fill_in 'user[email]', with: email
+    #       fill_in 'user[password]', with: password
+    #       fill_in 'user[password_confirmation]', with: password
+    #     end
+    #     click_button 'Submit'
+    #     expect(page).to have_content('Welcome! You have signed up successfully.')
+    # end
     # before do
     #   visit new_user_registration_path
     # end
@@ -48,4 +61,3 @@ RSpec.feature 'Signup Page', type: :feature do
     #   expect(page).to have_text 'Email has already been taken'
     # end
   end
-end
