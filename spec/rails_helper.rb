@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+require 'devise'
+require_relative 'support/controller_macros'
 require 'spec_helper'
 require 'support/factory_bot'
-require 'capybara/rails'
-require 'spec/database_cleaner'
+require 'capybara/rspec'
+require 'support/database_cleaner'
 require 'rack_session_access/capybara'
 
 ENV['RAILS_ENV'] ||= 'test'
@@ -38,6 +40,9 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 RSpec.configure do |config|
+  config.include Devise::Test::ControllerHelpers, :type => :controller
+  config.include FactoryBot::Syntax::Methods
+  config.extend ControllerMacros, :type => :controller
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
