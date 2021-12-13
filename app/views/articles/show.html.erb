@@ -4,9 +4,9 @@
 
 <% if @article.categories.any? %>
   <p>Categories:
-		<% @article.categories.each do |categories| %>
-	  	<span class=""> <%= categories.name %> </span>	
-		<% end %>
+		<% @article.categories.map(&:name).each do |name| %>
+    <%= "#{name} | " %>
+  <% end %>
 <% end %>
 </p>
 

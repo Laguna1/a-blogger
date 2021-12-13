@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateArticleCategories < ActiveRecord::Migration[6.1]
   def change
     create_table :article_categories do |t|
@@ -6,6 +8,6 @@ class CreateArticleCategories < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
-    add_index(:articles_categories, [:article_id, :category_id])
+    add_index(:articles_categories, %i[article_id category_id])
   end
 end
