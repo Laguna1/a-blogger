@@ -7,7 +7,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :articles
-
+  has_one_attached :avatar
   before_save { self.email = email.downcase }
 
   validates :fullname, presence: true,

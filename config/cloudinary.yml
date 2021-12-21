@@ -1,0 +1,23 @@
+development: 
+  cloud_name: "dn3h5pszd"
+  api_key: "625339554919532"
+  api_secret: "D2jAU6swU8guYidvAGm-4xYRBCU"
+  secure: true
+  enhance_image_tag: true
+  static_file_support: false
+
+production:
+  cloud_name: "dn3h5pszd"
+  api_key: "625339554919532"
+  api_secret: "D2jAU6swU8guYidvAGm-4xYRBCU"
+  secure: true
+  enhance_image_tag: true
+  static_file_support: false
+
+
+test:
+  cloud_name: dn3h5pszd
+  api_key: '625339554919532'
+  api_secret: "D2jAU6swU8guYidvAGm-4xYRBCU"
+  enhance_image_tag: true
+  static_file_support: false

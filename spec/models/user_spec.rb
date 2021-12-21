@@ -16,7 +16,10 @@ RSpec.describe User, type: :model do
     end
 
     context 'when fullname is not unique' do
-      before { described_class.create!(fullname: 'MegaWriter', email: 'notmegawriter@test.com', mobile_no: 380701111111, password: '111111') }
+      before do
+        described_class.create!(fullname: 'MegaWriter', email: 'notmegawriter@test.com', mobile_no: 380_701_111_111,
+                                password: '111111')
+      end
       it { expect(subject).to be_invalid }
     end
 
@@ -26,7 +29,10 @@ RSpec.describe User, type: :model do
     end
 
     context 'when email is not unique' do
-      before { described_class.create!(fullname: 'NotMegaWriter', email: 'megawriter@test.com', mobile_no: 380601111111, password: '111111') }
+      before do
+        described_class.create!(fullname: 'NotMegaWriter', email: 'megawriter@test.com', mobile_no: 380_601_111_111,
+                                password: '111111')
+      end
       it { expect(subject).to be_invalid }
     end
 
@@ -36,10 +42,11 @@ RSpec.describe User, type: :model do
     end
 
     context 'when mobile number is not unique' do
-      before { described_class.create!(fullname: 'NotMegaWriter', email: 'notmegawriter@test.com', mobile_no: 380501111111, password: '111111') }
+      before do
+        described_class.create!(fullname: 'NotMegaWriter', email: 'notmegawriter@test.com', mobile_no: 380_501_111_111,
+                                password: '111111')
+      end
       it { expect(subject).to be_invalid }
     end
-
-    
   end
 end

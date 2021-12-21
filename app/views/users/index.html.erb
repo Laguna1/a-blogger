@@ -1,1 +1,7 @@
 <h1>users#index</h1>
+<% @users.each do |user| %>
+  
+  <p><%= link_to user.fullname, user_path(user) %></p>
+  <p>Articles: <%= user.articles.count %></p>
+  <p>*****************************</p>
+  <% end %>

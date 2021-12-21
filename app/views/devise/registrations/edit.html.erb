@@ -41,10 +41,16 @@
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
 
+  <div class="field">
+    <%= f.file_field :avatar, direct_upload: true unless user.avatar.attached? %>
+    <%= display_avatar_in_form(user) %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
 <% end %>
+
 
 <h3>Cancel my account</h3>
 

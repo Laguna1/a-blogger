@@ -8,11 +8,22 @@
 
 <%= form_for @article do |f| %>
 
+
   <p class="mr-3">
+    <%= f.label :categories1 %><br />
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
     <% cb.label(class: "mr-3") {cb.check_box(class: "mr-3") + cb.text} %>
     <% end %>
 	</p>
+
+  <p>
+    <%= f.label :categories2 %><br />
+    <% for category in Category.all %>
+      <%= check_box_tag "article[category_ids][]", category.id, @article.categories.include?(category) %>
+      <%= category.name %><br />
+    <% end %>
+  </p>
+
   <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
